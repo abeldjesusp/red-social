@@ -35,4 +35,10 @@
         return $datos;
     }
 
+    function verificarSession(){
+        if(!isset($_SESSION['CodUsua'])){
+            header('location: login.php');
+        }
+    }
+
 ?>
