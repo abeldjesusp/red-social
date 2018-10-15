@@ -36,7 +36,7 @@
     }
 
     function verificarSession(){
-        if(!isset($_SESSION['CodUsua'])){
+        if(!isset($_SESSION['codUsua'])){
             header('location: login.php');
         }
     }
